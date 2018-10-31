@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>vue router自动判断左右翻页动画效果</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1,maximum-scale=1,">
+    <!-- <script src="https://h5.bestpay.com.cn/common/js/flexible-1.0.js"></script>
+    <script src="https://h5.bestpay.com.cn/common/js/flexible_css-1.0.js"></script> 
+    <script type="text/javascript" src="static/lib/md5.js"></script>-->
+    <script id="vconsole" type="text/javascript"></script>
+    <script type="text/javascript">
+        const locationUrl = window.location.host.toLowerCase();
+        // document.getElementById('vconsole').src='static/lib/vconsole.min.js';
+        if (locationUrl.indexOf('h5.bestpay') > -1 || locationUrl.indexOf('h5-pre.bestpay') > -1 || locationUrl.indexOf('h5alpha.bestpay') > -1) {
+            document.getElementById('vconsole').src='';
+        } else {
+            document.getElementById('vconsole').src='static/lib/vconsole.min.js';
+        }
+    </script>
+</head>
+
+<body>
+    <div id="app"></div>
+    <!-- 不能删除，删除之后，在main.js 文件中#id 找不到对应的id -->
+    <!-- built files will be auto injected -->
+</body>
+
+</html>
